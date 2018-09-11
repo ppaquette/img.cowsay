@@ -1,0 +1,9 @@
+jobs:
+  include:
+    - stage: deploy
+      os: linux
+      sudo: required
+      language: python
+      cache: pip
+      python: 3.6
+      scripts: ./run_deploy.sh
