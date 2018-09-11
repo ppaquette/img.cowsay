@@ -4,4 +4,6 @@ language: python
 cache: pip
 python: 3.6
 install: pip install -r requirements.txt
-script: ./run_deploy.sh
+script:
+  - chmod +x ./run_deploy.sh
+  - ./run_deploy.sh
